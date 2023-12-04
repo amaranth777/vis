@@ -1,0 +1,26 @@
+[
+  {
+	"Combat Power": "hp",
+	"score": 45
+  },
+  {
+	"Combat Power": "attack",
+	"score": 49
+  },
+  {
+	"Combat Power": "defense",
+	"score": 49
+  },
+  {
+	"Combat Power": "speed",
+	"score": 45
+  },
+  {
+	"Combat Power": "sp_attack",
+	"score": 65
+  },
+  {
+	"Combat Power": "sp_defense",
+	"score": 65
+  }
+]
