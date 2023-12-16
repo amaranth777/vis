@@ -15,6 +15,7 @@ header {
 	border-bottom: 1px solid #8f2b2b;
 	background-color: rgb(251, 251, 252);
 	margin: 10px;
+	width: 2000px;
 	height: 50px;
 }
 
@@ -40,14 +41,18 @@ header > ul > li > a {
 	color: black;
 	font-size: 36px;
 	font-style: oblique;
-}
-
-body {
 	background-color: rgba(209, 209, 212, 0.776);
+	background: -webkit-linear-gradient( GhostWhite, #c9fafd);
+	background-color: rgba(209, 209, 212, 0.776);
+}
+body{
+	background: -webkit-linear-gradient( GhostWhite, #e0eced);
+	margin: 0px;
+	padding:0px;
 }
 
 #max {
-	width: 1700px;
+	width: 1500px;
 }
 
 #max #top {
@@ -62,10 +67,9 @@ body {
 #max #top #mid {
 	margin-top: 50px;
 	line-height: 100px;
-	width: 700px;
+	width: 850px;
 	margin-left: 100px;
-	border: 1px solid #999;
-	font-size: 30px;
+	font-size: 45px;
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
 	text-align: center;
@@ -73,15 +77,15 @@ body {
 
 #max #right {
 	margin-top: 50px;
-	margin-right: 100px;
 	float: right;
 	line-height: 650px;
-	width: 700px;
-	border: 1px solid #999;
+	width: 200px;
+	height:650px;
 	font-size: 20px;
 	font-style: oblique;
 	font-weight: bold;
 	text-align: center;
+	margin-right: 150px;
 }
 
 #max #middle {
@@ -93,25 +97,28 @@ body {
 }
 
 #max #middle #left1 img {
-	border: 1px solid #999;
+	border: 1px dashed #999;
 	margin-left: 100px;
 	width: 500px;
 	height: 500px;
 }
 
 #max #middle #right1 {
-	overflow: hidden;
+	text-indent: 2em;
 	border: 1px solid #999;
 	margin-left: 20px;
 	margin-top: 50px;
-	width: 180px;
+	width: 330px;
 	height: 500px;
-}
-
-#max #middle #right1 li {
-	margin-bottom: 10px;
-	font-size: 20px;
-	font-family: 'Courier New', Courier, monospace;
+	font-size: 15px;
 	font-weight: bold;
 	text-align: left;
+	line-height: 30px;
+	overflow-y: scroll;
+	padding-left:10px;
+}
+
+#max #right #right2{
+	width:400px;
+	height:650px;
 }

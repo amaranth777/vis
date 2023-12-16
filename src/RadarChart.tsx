@@ -16,11 +16,12 @@ const RadarChart: React.FC<RadarChartProps> = ({data}) => {
 				data,
 				xField: 'label',
 				yField: 'value',
+				color:'#2cc4de',
 				meta: {
 					value: {
-						alias: '分数',
+						alias: 'value',
 						min: 0,
-						max: 100,//TODO: 是否需要动态调整
+						max: 160,//TODO: 是否需要动态调整
 					},
 				},
 				xAxis: {
@@ -47,16 +48,35 @@ const RadarChart: React.FC<RadarChartProps> = ({data}) => {
 						alternateColor: 'rgba(0, 0, 0, 0.04)',
 					},
 				},
-				area: {},
+				area: {
+
+					style:{
+						opacity:0.5,
+						fill:'#6beae6',
+
+					}
+				},
 				point: {
 					size: 2,
+
 				},
+				lineStyle:{
+					fontSize:2,
+					opacity:0.8,
+					lineJoin:'round',
+					lineCap:'round',
+				},
+
+				tooltip:{
+					shared:true,
+					offset: 20,
+				}
 			});
 			radarPlot.render();
 		}
 	}, [data]);
 
-	return <div ref={containerRef} style={{width: '300px', height: '300px'}}/>;
+	return <div ref={containerRef} style={{width: '500px', height: '500px'}}/>;
 };
 
 export default RadarChart;
